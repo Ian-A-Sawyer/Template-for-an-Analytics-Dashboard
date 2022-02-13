@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CentralApiService } from '../central-api.service';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,26 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   public currentCount: number = 0;
-  
-  constructor() {}
 
+  constructor(private api: CentralApiService) {}
+
+  checkLength() {
+    const n: number = this.currentCount;
+
+    const bool: boolean = n > 0;
+
+    return bool;
+  }
+
+  retrieveCount(e: any) {
+    this.api.retrieveResponse().subscribe((res: any) => {
+      const value: any = res['value'];
+
+      this.currentCount = value;
+    });
+  }
+
+  ionViewDidEnter() {
+
+  }
 }
