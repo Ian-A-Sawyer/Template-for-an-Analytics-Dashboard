@@ -1,34 +1,14 @@
-<!-- <ion-header id="TODO-future-header" [translucent]="true">
+<ion-header id="header" [translucent]="true">
   <ion-toolbar>
     <ion-title>
+      Analytics Dashboard
     </ion-title>
   </ion-toolbar>
-</ion-header> -->
+</ion-header>
 
 <ion-content id="HomeContent" [fullscreen]="true">
   <div id="container">
-    <ion-grid>
-      <ion-row>
-        <ion-col></ion-col>
-        <ion-col>
-          <ion-card>
-            <ion-card-header>
-              Number of A.P.I. Hits
-            </ion-card-header>
-            <ion-card-subtitle>
-              Value:
-              <span [hidden]="checkLength()">Click Button To Retrieve Count</span>
-              <span class="value" [hidden]="!checkLength()">{{ currentCount }}</span>
-            </ion-card-subtitle>
-            <ion-card-content>
-              <ion-button class="btn" id="MainCenterButton" size="md" (click)="retrieveCount($event)">
-                Retrieve Api Number of Sent Responses
-              </ion-button>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-        <ion-col></ion-col>
-      </ion-row>
-    </ion-grid>
+    <app-grid>
+    </app-grid>
   </div>
 </ion-content>

@@ -12,21 +12,6 @@ export class HomePage {
 
   constructor(private api: CentralApiService) {}
 
-  checkLength() {
-    const n: number = this.currentCount;
-
-    const bool: boolean = n > 0;
-
-    return bool;
-  }
-
-  retrieveCount(e: any) {
-    this.api.retrieveResponse().subscribe((res: any) => {
-      const value: any = res['value'];
-
-      this.currentCount = value;
-    });
-  }
 
   ionViewDidEnter() {
 
