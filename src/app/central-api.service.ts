@@ -13,6 +13,21 @@ export class CentralApiService {
 
   private currentCount: any = '';
 
+  private grid: any = {};
+  private gridKeys: any[] = [];
+
+  getGridKeys() {
+    const keys = this.gridKeys;
+    
+    return keys; 
+  }
+
+  getGrid() {
+    const grid = this.grid;
+    
+    return grid; 
+  }
+
   setCurrentCount(count: any) {
     const displayValue: any = count;
 

@@ -1356,5 +1356,8 @@ sub {
 .ion-align-items-baseline {
   align-items: baseline !important;
 }
+*, html, body {
+  font-family: "Poppins" !important;
+}
 
 /*# sourceMappingURL=styles.css.map*/
