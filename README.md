@@ -40,5 +40,5 @@ Navigate to http://localhost:3000
 ## Running Heroku Environments
 
 1. `heroku create`
-2. `git push heroku master`
+2. `git push heroku main`
 
