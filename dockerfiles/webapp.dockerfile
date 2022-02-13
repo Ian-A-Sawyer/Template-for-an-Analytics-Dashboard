@@ -6,6 +6,8 @@ COPY package*.json ./
 
 RUN npm install
 
+RUN ionic build web
+
 COPY . .
 
 EXPOSE 3000

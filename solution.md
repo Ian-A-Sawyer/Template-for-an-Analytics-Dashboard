@@ -1,4 +1,4 @@
-# Analytics Dashboard 
+# Template - Analytics Dashboard 
 
 ## Running Devlopment Environments
 
@@ -21,6 +21,15 @@ NodeJS - https://nodejs.dev/download/
 2. `npm install`
 3. `ionic serve`
 
+Navigate to http://localhost:8100
+
+
+### Testing Live Environment
+
+1. `ionic build web`
+2. `node server.js`
+
+Navigate to http://localhost:3000
 
 
 ## Running Docker Environments
