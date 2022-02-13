@@ -36,3 +36,9 @@ Navigate to http://localhost:3000
 
 1. A.P.I. & Served Webapp & - `docker-compose.exe up app`
 
+
+## Running Heroku Environments
+
+1. `heroku create`
+2. `git push heroku master`
+
